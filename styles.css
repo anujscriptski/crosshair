@@ -1,0 +1,87 @@
+.menu-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 300px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: none;
+}
+
+.menu-container.active {
+    display: block;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.tab {
+    flex: 1;
+    padding: 10px;
+    background: #333;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.tab.active {
+    background: #555;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.crosshair-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.crosshair-grid img {
+    width: 100%;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.crosshair-grid img:hover {
+    border-color: #fff;
+}
+
+#settings label {
+    display: block;
+    margin: 10px 0;
+}
+
+#crosshair-display {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.kill-effect {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+    color: white;
+    font-size: 18px;
+}
+
+.kill-effect.active {
+    display: block;
+}
